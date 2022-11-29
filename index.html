@@ -28,6 +28,9 @@
         height: 70px;
         padding: 0 50px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        position: sticky;
+        top: 0px;
+        background-color: white;
       }
       a img  {
            margin-top: 10px;
@@ -93,6 +96,10 @@
         font-weight: lighter;
         padding: 15px 0 5px 10px;
        }
+       footer {
+        background-color:rgb(249, 244, 244);
+        padding: 30px 0 15px 0;
+       }
        #footermaindiv > div {
         display: flex;
         flex-wrap: wrap;
@@ -109,9 +116,20 @@
        #footermaindiv > div+div{
            margin: 50px 0 50px 0;
        }
+       #footermaindiv > div+div ul li {
+        padding: 0 -100px;
+       }
        #footermaindiv > div >div ul{
            display: flex;
            flex-direction: column;
+           margin: 10px 0 0 -14px;
+       }
+       #footermaindiv > div >div h2 {
+          font-size: 15px;
+          font-weight: lighter;
+       }
+       #footermaindiv > div >div ul li a {
+        font-size: 13px;
        }
 
     </style>
@@ -129,7 +147,7 @@
         <div>
             <nav id="navitem">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#">New</a></li>
                     <li><a href="#">Earrings</a></li>
                     <li><a href="#">Necklaces</a></li>
@@ -206,6 +224,7 @@
                 <div>
                     <h2>Info</h2>
                     <ul> 
+                        <li><a href="#">Search</a></li><br>
                         <li><a href="#">Terms of Service</a></li><br>
                         <li><a href="#">Refund policy</a></li><br>
                         <li><a href="#">Wholesale</a></li><br>
@@ -221,7 +240,7 @@
             </div>
             <div>
                 <div>
-                    <h2>Subscribe to our emails</h2>
+                    <h2>Subscribe to our Emails</h2>
                 </div>
                 <ul>
                     <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
