@@ -1,1 +1,0 @@
-# Lovoda-construct-week-project
