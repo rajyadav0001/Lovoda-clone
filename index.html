@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <script src="https://kit.fontawesome.com/a0499833b3.js" crossorigin="anonymous"></script>
+    <style>
+      #firstdiv > p {
+        font-size: 12px;
+        text-align: center;
+        padding: 10px 0 ;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+      *{
+        margin:0;
+        padding: 0;
+        outline: none;
+        box-sizing: border-box;
+        font-family: 'Montserrat',sans-serif;
+      }
+      #header{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        padding: 0 50px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+      a img  {
+           margin-top: 10px;
+           height: 45px;
+           width: 90px;
+      }
+      ul{
+        display: flex;
+        list-style: none;
+        padding: 0 0 0 -10px;
+      }
+      ul li{
+        padding: 0 15px;
+      }
+      ul li:hover {
+        text-decoration: underline;
+      }
+      ul li a{
+        color:black;
+        text-decoration: none;
+        height: 18px;
+        width: 37px;
+        min-height: auto;
+        min-width: auto;
+      }
+      #navrightsection{
+        display: flex;
+      }
+      #navrightsection form,i {
+        padding: 0 10px;
+      }
+      #fridaysalesection img {
+        width: 100%;
+        min-width: auto;
+        min-height: auto;
+        background-color: rgb(128,128,128);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      }
+      #checkoutsection h1 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 100;
+        margin-top: 50px;
+      }
+      #productsection{
+         margin:50px 85px ;
+      }
+       #productsection >div {
+        display: grid;
+         grid-template-columns: repeat(4,1fr);
+         margin: auto;
+         gap: 10px;
+       }
+       #productsection >div div img {
+        width: 100%;
+        height: 80%;
+       }
+       #productsection >div div p{
+        font-size: 13px;
+        padding: 15px 0 5px 10px;
+       }
+       #productsection >div div h3{
+        font-weight: lighter;
+        padding: 15px 0 5px 10px;
+       }
+       #footermaindiv > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+       }
+       #footermaindiv > div >div +div p{
+          font-size: 15px;
+          padding: 13px 0;   
+       }
+       #footermaindiv > div >div +div h2{
+          font-size: 15px;
+          padding: 13px 0;
+       }
+       #footermaindiv > div+div{
+           margin: 50px 0 50px 0;
+       }
+       #footermaindiv > div >div ul{
+           display: flex;
+           flex-direction: column;
+       }
+
+    </style>
+  </head>
+  <body>
+    <div id="firstdiv">
+      <p>Free Shipping on Orders Over $75 and Free Returns (US ONLY)</p>
+    </div>
+    <header id="header">
+        <div class="imglogo">
+            <h1>
+                <a href="index.html"><img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/files/04122019_logo2_90x@2x.png?v=1645644264" alt="Lovoda img"> </a>
+              </h1>
+        </div>
+        <div>
+            <nav id="navitem">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Earrings</a></li>
+                    <li><a href="#">Necklaces</a></li>
+                    <li><a href="#">Bracelets</a></li>
+                    <li><a href="#">Rings</a></li>
+                    <li><a href="#">Shop Social</a></li>
+                </ul>
+              </nav>
+        </div>
+        <div id="navrightsection">
+            <form action="#">
+                <input type="Search" required>
+                <button type="submit" <i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+    </header>
+    <main>
+        <section id="fridaysalesection">
+            <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/files/IMG_1860_2000x.gif?v=1669206551" alt="black friday sale">
+        </section>
+        <section id="checkoutsection">
+              <h1>Enter Code at Checkout: cyberweekend22</h1>
+        </section>
+        <section id="productsection">
+                 <div>
+                    <div>
+                        <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101095-G-2_713x.jpg?v=1666122186" alt="">
+                        <p>Stone Stud Hoop | Gold</p>
+                        <h3>$16.00</h3>
+                    </div>
+                    <div>
+                        <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101095-S-2_1100x.jpg?v=1666122058" alt="">
+                        <p>Stone Stud Hoop | Silver</p>
+                        <h3>$14.00</h3>
+                    </div>
+                    <div>
+                        <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101107-S-3_713x.jpg?v=1666121977" alt="">
+                        <p>Ball Stud Earrings | Silver</p>
+                        <h3>$10.00</h3>
+                    </div>
+                    <div>
+                        <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101106-S-3_713x.jpg?v=1666121894" alt="">
+                        <p>Classic Stone Stud Earrings | Silver</p>
+                        <h3>$10.00</h3>
+                    </div>
+                    <div>
+                        <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101094-S-2_360x.jpg?v=1666121769" alt="">
+                        <p>Disk Hoop Earrings | Silver</p>
+                        <h3>$18.00</h3>
+                    </div>
+                    <div>
+                        <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101094-G-3_713x.jpg?v=1666121610" alt="">
+                        <p>Disk Hoop Earrings | Gold</p>
+                        <h3>$21.00</h3>
+                    </div>
+                    <div>
+                        <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101093-1_713x.jpg?v=1666121383" alt="">
+                        <p>Croissant Hoop Earrings</p>
+                        <h3>$20.00</h3>
+                    </div>
+                    <div>
+                        <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101092-S-1_713x.jpg?v=1666121255" alt="">
+                        <p>Simple Hoop Earrings | Silver</p>
+                        <h3>$16.00</h3>
+                    </div>
+                 </div>
+        </section>
+    </main>
+    <footer>
+        <div id="footermaindiv">
+            <div>
+                <div>
+                    <h2>Info</h2>
+                    <ul> 
+                        <li><a href="#">Terms of Service</a></li><br>
+                        <li><a href="#">Refund policy</a></li><br>
+                        <li><a href="#">Wholesale</a></li><br>
+                        <li><a href="#">Shipping</a></li><br>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Contact Us!</h2>
+                    <p>Need to talk? Reach us via email, phone or text!</p>
+                    <h2>Email: Customerservice@Lovoda.com</h2>
+                    <h2>Phone: (443) 500-1200</h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h2>Subscribe to our emails</h2>
+                </div>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+     
+  </body>
+</html>
