@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+    <style>
+      #main {
+        display: flex;
+        /* background-color: red; */
+        width: 100%;
+        /* margin-left: 100px; */
+        /* margin-right: 200px; */
+      }
+      #main div:first-child {
+        width: 50%;
+      }
+      #main div:last-child {
+        width: 30%;
+      }
+      
+      #main > div {
+        height: 100vh;
+        /* background-color: green; */
+        border: 3px solid green;
+        margin: auto;
+      }
+      #parent1 div:first-child {
+        width: 100%;
+        height: 20%;
+        /* background-color: blue; */
+      }
+      #parent1 div:first-child img {
+        margin: auto;
+        padding-top: 100px;
+      }
+      #parent1 div:last-child {
+        width: 100%;
+        height: 80%;
+        /* background-color: yellow; */
+        text-decoration: none;
+      }
+      #parent1 div:last-child div a {
+        text-decoration: none;
+      }
+      #parent1 > div p{
+        text-align: center;
+      }
+      #parent1 div:last-child div {
+        text-align: center;
+      }
+      #parent1 div:last-child div button {
+        width: 85px;
+        height: 45px;
+        background-color: black;
+        border-radius: 5px;
+      }
+      #parent1 div:last-child div button img {
+        width: 40px;
+      }
+      #or >div:first-child{
+         display: flex;
+         margin: auto;
+         height:fit-content;
+
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="parent1">
+        <div>
+          <img
+            src="https://cdn.shopify.com/s/files/1/0627/7388/7215/files/04122019_logo2_90x.png?v=1645644264"
+            alt=""
+          />
+        </div>
+        <div>
+          <div>
+            <a href="">Cart ></a>
+            <a href="">information ></a>
+            <a href="">Shipping ></a>
+            <a href="">Payment </a>
+          </div>
+          <p>Express checkout</p>
+          <div>
+            <button>
+              <a href="www.paypal.com"><img src="/g.png" alt="" /></a>
+            </button>
+          </div>
+          <p >or</p>
+          <div id="or">
+            <div >
+             <p>Contact information</p>
+            <p>
+              Already have an account?
+              <a href="/logIn.html">Log in</a>
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="parent2">boys</div>
+    </div>
+  </body>
+</html>
