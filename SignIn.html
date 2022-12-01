@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <style>
+      #main {
+        margin: auto;
+        margin-top: 80px;
+        width: 33%;
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        /* background-color: red; */
+      }
+      h1 {
+        margin-bottom: 60px;
+      }
+      /* //Descendant Selector */
+      #main div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+      }
+      button {
+        cursor: pointer;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: white;
+        text-align: left;
+        border-radius: 4px;
+        justify-content: center;
+        align-items: center;
+      }
+      button:first-child {
+        border-color: blue;
+        color: blue;
+      }
+      button:nth-child(2) {
+        border: none;
+        box-shadow: 3px 1px 3px 1px;
+        color: black;
+      }
+      button:nth-child(3) {
+        border-style: none;
+        background-color: orange;
+        color: white;
+      }
+
+      button img {
+        width: 15px;
+        margin-right: 27px;
+        margin-left: 6px;
+        /* margin-left: -20px; */
+      }
+      #main div input {
+        margin-top: 20px;
+        padding: 11px;
+        width: 91%;
+        border-radius: 2px;
+      }
+      #main div:last-child a {
+        text-align: left;
+        margin-top: 15px;
+        color: black;
+      }
+      #main div:last-child {
+        align-items: center;
+        height: 35%;
+      }
+      #main div:last-child button {
+        width: 120px;
+        margin-top: 30px;
+
+        background-color: black;
+        color: white;
+        border-radius: 2px;
+        text-align: center;
+      }
+      #last{
+         background-color: red;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Create account</h1>
+      <div>
+        <button>
+          <img src="/fb.png" alt="facebook" /> Continue with Facebook
+        </button>
+        <button><img src="/google.png" alt="" /> Google</button>
+        <button><img src="/am.png" alt="" /> Amazon</button>
+      </div>
+      <div>
+        <input type="text" placeholder="First Name" />
+        <input type="text" placeholder="Last Name" />
+        <input type="text" placeholder="Email" />
+        <input type="text" placeholder="Password" />
+        <input type="checkbox" name="" id="">
+        <button>Create account</button>
+      </div>
+    </div>
+  </body>
+</html>
