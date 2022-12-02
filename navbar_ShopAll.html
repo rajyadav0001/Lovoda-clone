@@ -4,10 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop All</title>
-    <script src="https://kit.fontawesome.com/a0499833b3.js" crossorigin="anonymous"></script>
+    <title>Document</title>
     <style>
-         #firstdiv > p {
+        #parent{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:10px;
+        }
+        #parent>div
+        {
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .cart,button
+        {
+            width:50%;
+            border-radius:10px;
+            background-color: rgb(178, 234, 234);
+            color: white;
+            border: none;
+            padding:10px 0;
+            margin-bottom:10px;
+        }
+        button
+        {
+          width:10%;
+        }
+        button>a
+        {
+          text-decoration: none;
+          color:aliceblue;
+        }
+        img
+        {
+            width:100%;
+        }
+        #parent>div>div
+        {
+            display: flex;
+            justify-content: space-around;
+
+        }
+        div>p:last-child
+        {
+            text-decoration: line-through;
+        }
+
+        #firstdiv > p {
         font-size: 12px;
         text-align: center;
         padding: 10px 0 ;
@@ -128,119 +171,194 @@
        #footermaindiv > div >div ul li a {
         font-size: 13px;
        }
-       /* footer section ends  here */
     </style>
 </head>
 <body>
-    <div id="firstdiv">
-        <p>Free Shipping on Orders Over $75 and Free Returns (US ONLY)</p>
-      </div>
-    <header id="header">
-        <div class="imglogo">
-            <h1>
-                <a href="index.html"><img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/files/04122019_logo2_90x@2x.png?v=1645644264" alt="Lovoda img"> </a>
-              </h1>
-        </div>
-        <div>
-            <nav id="navitem">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="navbar_new.html">New</a></li>
-                    <li><a href="navbar_ShopAll.html">Shop All</a></li>
-                    <li><a href="navbar_Earrings.html">Earrings</a></li>
-                    <li><a href="navbar_Necklaces.html">Necklaces</a></li>
-                    <li><a href="navbar_Bracelet.html">Bracelets</a></li>
-                    <li><a href="navbar_Ring.html">Rings</a></li>
-                     
-                </ul>
-              </nav>
-        </div>
-        <div id="navrightsection">
-            <form action="#">
-                <input type="Search" required>
-                <button type="submit" <i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-            <i class="fa-regular fa-user"></i>
-            <i class="fa-solid fa-bag-shopping"></i>
-        </div>
-    </header>
-    <h1>All Products</h1>
-    <section id="productsection">
-        <div>
-           <div>
-               <a href="product_details.html"><img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401014-7-1_823x.jpg?v=1645727998" alt="Round and Round Ring"></a> 
-               <p>Round and Round Ring</p>
-               <h3>$14.00</h3>
-           </div>
-           <div>
-               <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401020-7-1_823x.jpg?v=1645728953" alt="Dreamer Ring">
-               <p>Dreamer Ring</p>
-               <h3>$14.00</h3>
-           </div>
-           <div>
-               <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401021-7-1_823x.jpg?v=1645729096" alt="Lucky 3's Ring">
-               <p>Lucky 3's Ring</p>
-               <h3>$14.00</h3>
-           </div>
-           <div>
-               <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401024-7-1_823x.jpg?v=1645729404" alt="Ambition Stone Ring | Pine">
-               <p>Ambition Stone Ring | Pine</p>
-               <h3>$20.00</h3>
-           </div>
-           <div>
-               <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/011000098-2__43894_823x.jpg?v=1645115759" alt="Rays Of Light Hoops">
-               <p>Rays Of Light Hoops</p>
-               <h3>$16.00</h3>
-           </div>
-           <div>
-               <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/040500096-3_b68fc76f-25a0-4d72-b457-29574a4be70c_823x.jpg?v=1651248239" alt="Initial Ring | Size 7">
-               <p>Initial Ring | Size 7</p>
-               <h3>$14.00</h3>
-           </div>
-           <div>
-               <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401005-7-1__25318_823x.jpg?v=1645115953" alt="Dimensions Ring">
-               <p>Dimensions Ring</p>
-               <h3>$12.00</h3>
-           </div>
-           <div>
-               <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401023-7-1_823x.jpg?v=1645729304" alt="Ambition Stone Ring | Dusty Rose">
-               <p>Ambition Stone Ring | Dusty Rose</p>
-               <h3>$16.00</h3>
-           </div>
-        </div>
-</section>
-<footer>
-    <div id="footermaindiv">
-        <div>
-            <div>
-                <h2>Info</h2>
-                <ul> 
-                    <li><a href="#">Search</a></li><br>
-                    <li><a href="#">Terms of Service</a></li><br>
-                    <li><a href="#">Refund policy</a></li><br>
-                    <li><a href="#">Wholesale</a></li><br>
-                    <li><a href="#">Shipping</a></li><br>
-                </ul>
-            </div>
-            <div>
-                <h2>Contact Us!</h2>
-                <p>Need to talk? Reach us via email, phone or text!</p>
-                <h2>Email: Customerservice@Lovoda.com</h2>
-                <h2>Phone: (443) 500-1200</h2>
-            </div>
-        </div>
-        <div>
-            <div>
-                <h2>Subscribe to our Emails</h2>
-            </div>
-            <ul>
-                <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-square-pinterest"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-            </ul>
-        </div>
+  <div id="firstdiv">
+    <p>Free Shipping on Orders Over $75 and Free Returns (US ONLY)</p>
+  </div>
+<header id="header">
+    <div class="imglogo">
+        <h1>
+            <a href="index.html"><img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/files/04122019_logo2_90x@2x.png?v=1645644264" alt="Lovoda img"> </a>
+          </h1>
     </div>
-</footer>
+    <div>
+        <nav id="navitem">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="navbar_new.html">New</a></li>
+                <li><a href="navbar_ShopAll.html">Shop All</a></li>
+                <li><a href="navbar_Earrings.html">Earrings</a></li>
+                <li><a href="navbar_Necklaces.html">Necklaces</a></li>
+                <li><a href="navbar_Bracelet.html">Bracelets</a></li>
+                <li><a href="navbar_Ring.html">Rings</a></li>
+                 
+            </ul>
+          </nav>
+    </div>
+    <div id="navrightsection">
+        <form action="#">
+            <input type="Search" required>
+            <button type="submit" <i> class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <i class="fa-regular fa-user"></i>
+        <i class="fa-solid fa-bag-shopping"></i>
+    </div>
+</header>
+<h1>All Products</h1>
+    <div id="parent"></div>
+    <footer>
+      <div id="footermaindiv">
+          <div>
+              <div>
+                  <h2>Info</h2>
+                  <ul> 
+                      <li><a href="#">Search</a></li><br>
+                      <li><a href="#">Terms of Service</a></li><br>
+                      <li><a href="#">Refund policy</a></li><br>
+                      <li><a href="#">Wholesale</a></li><br>
+                      <li><a href="#">Shipping</a></li><br>
+                  </ul>
+              </div>
+              <div>
+                  <h2>Contact Us!</h2>
+                  <p>Need to talk? Reach us via email, phone or text!</p>
+                  <h2>Email: Customerservice@Lovoda.com</h2>
+                  <h2>Phone: (443) 500-1200</h2>
+              </div>
+          </div>
+          <div>
+              <div>
+                  <h2>Subscribe to our Emails</h2>
+              </div>
+              <ul>
+                  <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-square-pinterest"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+              </ul>
+          </div>
+      </div>
+  </footer>
 </body>
 </html>
+<script>
+      var mensData = [
+    {
+      id:1,
+      image_url:
+        "https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101095-G-2_823x.jpg?v=1666122186",
+      name: "Round and Round Ring",
+      price: "16.00",
+      strikedoffprice: "2599",
+      qty:1,
+     
+    },
+    {
+      id:2,
+      image_url:
+      "https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401020-7-1_823x.jpg?v=1645728953",
+      name: "Dreamer Ring ",
+      price: 699,
+      strikedoffprice: 999,
+    },
+    {
+      id:3,
+      image_url:
+        "https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401021-7-1_823x.jpg?v=1645729096",
+      name: "Lucky 3's Ring",
+      price: 945,
+      strikedoffprice: 2099,
+    },
+    {
+      id:4,
+      image_url:
+      "https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401024-7-1_823x.jpg?v=1645729404",
+      name: "Amibation Stone Ring | Pine",
+      price: 399,
+      strikedoffprice: 799,
+    },
+    {
+      id:5,
+      image_url:
+      "https://cdn.shopify.com/s/files/1/0627/7388/7215/products/011000098-2__43894_823x.jpg?v=1645115759",
+      name: "Rays of lignts hopps ",
+      price: 1620,
+      strikedoffprice: 3599,
+    },
+    {
+      id:6,
+      image_url:
+      "https://cdn.shopify.com/s/files/1/0627/7388/7215/products/040500096-3_b68fc76f-25a0-4d72-b457-29574a4be70c_823x.jpg?v=1651248239",
+      name: "Intial Ring | size 7 ",
+      price: 1440,
+      strikedoffprice: 3199,
+    },
+    {
+      id:7,
+      image_url:
+      "https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401005-7-1__25318_823x.jpg?v=1645115953",
+      name: " Rays of lignts hopps ",
+      price: 1999,
+      strikedoffprice: 3199,
+    },
+    {
+      id:8,
+      image_url:
+      "https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401023-7-1_823x.jpg?v=1645729304",
+      name: "Rays of lignts hopps  ",
+      price: 769,
+      strikedoffprice: 1099,
+    },
+  ]
+displayProducts();
+function displayProducts()
+{
+    mensData.map(function(elem){
+  var div=document.createElement("div");
+
+  var image=document.createElement("img");
+  image.setAttribute("src",elem.image_url);
+  image.setAttribute("alt",elem.name);
+
+  var name=document.createElement("h5");
+  name.textContent=elem.name;
+
+  var pricebox=document.createElement("div");
+  var price=document.createElement("p");
+   price.textContent="$"+ elem.price;
+
+   var MRP=document.createElement("p");
+   MRP.textContent="$"+elem.strikedoffprice;
+
+   pricebox.append(price,MRP);
+
+   var cartbtn=document.createElement("button");
+      cartbtn.textContent="Add to Cart";
+      cartbtn.setAttribute("class","cart");
+      cartbtn.addEventListener("click",function(){
+
+          addtocart(elem);
+        });
+
+   div.append(image,name,pricebox,cartbtn);
+   document.getElementById("parent").append(div);
+   
+
+    });
+}
+var cartArr=JSON.parse(localStorage.getItem("cart"))||[];
+function addtocart(product)
+{
+console.log(product);
+//single product and multiple product
+var productpresent=cartArr.filter(function(elem){
+  elem.id==product.id
+});
+productpresent.qty=productpresent.qty++;
+cartArr.push(product);
+localStorage.setItem("cart",JSON.stringify(cartArr));
+}
+</script>
+<script src="product.js"></script>

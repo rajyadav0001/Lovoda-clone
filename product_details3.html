@@ -4,11 +4,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lovoda</title>
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
-    </script>
 
     <!-- favicon -->
     <link
@@ -19,7 +14,7 @@
 
     <!-- custom css -->
 
-    
+    <link rel="stylesheet" href="./styles/product-details.css" />
 
     <!-- font-awesome -->
     <link
@@ -426,7 +421,7 @@
   .card img {
     width: 100%;
     height: 195px;
-    
+    object-fit: cover;
   }
 }
     </style>
@@ -439,7 +434,7 @@
           <div id="three-layer">
             <img
               id="main-img"
-              src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101095-G-2_823x.jpg?v=1666122186"
+              src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101107-S-3_823x.jpg?v=1666121977"
               alt="main-img"
               width="100%"
               loading="lazy"
@@ -447,14 +442,14 @@
             <div id="sidebyside-img">
               <img
                 id="second-img"
-                src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101095-G-4_823x.jpg?v=1666122186"
+                src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101107-S-4_823x.jpg?v=1666121977"
                 alt=""
                 loading="lazy"
               />
               <img
                 id="third-img"
                 class="rotateimg180"
-                src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101095-G-1_823x.jpg?v=1666122186"
+                src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101107-S-1_823x.jpg?v=1666121977"
                 alt=""
                 loading="lazy"
               />
@@ -463,7 +458,7 @@
         </div>
         <div id="right-text-sec">
           <h5 id="brand-name">LOVODA</h5>
-          <h1 id="product-title">Stone Stud Hoop | Gold</h1>
+          <h1 id="product-title">Ball Stud Earrings | Silver</h1>
           <p id="review-star">
             <i class="fa fa-star-o" aria-hidden="true"></i>
             <i class="fa fa-star-o" aria-hidden="true"></i>
@@ -496,9 +491,9 @@
             <button id="count-num">10</button>
             <button id="inc">+</button>
           </div>
-          <a href="navbar_ShopAll.html" id="continue-shopping">Continue shopping</a>
-         <button id="add-to-cart" onclick="change()">Add to Cart</button>
-         <a href="cart/cart.html"> <button id="wishlist">View my Cart</button></a>
+          <a href="shop-all.html" id="continue-shopping">Continue shopping</a>
+          <button id="add-to-cart">Add to Cart</button>
+          <button id="wishlist">View my Cart</button>
           <button id="buy-it-now">checkout</button>
           <p id="below-text">
             Vintage gold metal with a circle of pearls and a center of small
@@ -578,13 +573,4 @@
   </body>
   
 </html>
-<script>
-function change() {
-  if (document.getElementById("add-to-cart").innerText == "Add to Cart") {
-    document.getElementById("add-to-cart").innerText = "Added to Cart";
-  } else {
-    document.getElementById("add-to-cart").innerText = "Added to Cart";
-  }
-}
-</script>
 <script src="product.js"></script>
