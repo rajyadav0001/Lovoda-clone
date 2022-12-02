@@ -423,10 +423,6 @@
   <body>
     
     <div id="container">
-      <div id="total_I">
-        <span>Total Items: </span>
-        <span id="total">0</span>
-      </div>
       
       <div id="cart-sec">
         <h1>Your cart</h1>
@@ -434,11 +430,6 @@
       </div>
 
       <div id="cart-table">
-        <div id="table-heading">
-          <p>PRODUCT</p>
-          <p>QUANTITY</p>
-          <p>TOTAL</p>
-        </div>
         <hr class="hr-bar" />
 
         <div id="products-list"></div>
@@ -455,7 +446,7 @@
 
 
       <div id="payment-option-sec">
-        <p id="subtotal-text" style="font-weight: bold; font-size: 20px;">Subtotal: <span style="font-weight: bold; font-size: 20px;" id="subtotal"></span></p>
+        <p id="subtotal-text" style="font-weight: bold; font-size: 20px;">Subtotal:$16.00<span style="font-weight: bold; font-size: 20px;" id="subtotal"></span></p>
         <p class="text">or 4 interest-free payments of $49.50 with</p>
         <p id="afterpay"><span>aftrepay</span>ⓘ</p>
         <p class="text">
@@ -561,7 +552,7 @@
       name.textContent=elem.name;
 
       var price=document.createElement("p");
-      price.textContent="र"+ elem.price;
+      price.textContent="$"+ elem.price;
 
       div.append(image,name,price);
       document.getElementById("cart").append(div);
