@@ -23,6 +23,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <style>
+      .continueshipping {
+        bor
+      }
+    </style>
   </head>
   <body>
     <div id="container">
@@ -34,8 +39,8 @@
             alt="Lovoda"
           />
           <div id="breadcrumb">
-            <p>Cart <i class="fa fa-angle-right" aria-hidden="true"></i></p>
-            <p>
+           <a href="./cart/cart.html"><p>Cart <i class="fa fa-angle-right" aria-hidden="true"></i></p></a>
+            <a href=""></a><p>
               Information <i class="fa fa-angle-right" aria-hidden="true"></i>
             </p>
             <p>Shipping <i class="fa fa-angle-right" aria-hidden="true"></i></p>
@@ -160,11 +165,12 @@
               <input type="text" id="zipcode" placeholder="ZIP Code" />
             </div>
             <div id="action-btn-area">
-              <a href="cart.html"
+              <a href="./cart/cart.html"
                 ><i class="fa fa-angle-left" aria-hidden="true"></i> Return to
                 cart</a
               >
-              <a href="Payment.html"><button  > Continue to Shipping</button></a>
+              <a href="Payment.html" class="continueshipping">Continue to Shipping</a>
+               
              
               <!-- <button id="submit"></button> -->
             </div>
