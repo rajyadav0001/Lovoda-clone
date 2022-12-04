@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments page</title>
+</head>
+<style>
+    div p{
+        display:flex;
+       
+    }
+    
+    span{
+        color:grey;
+    }
+    a{
+        color:skyblue;
+    }
+    #method{
+        border: 1px grey;
+    }
+    #firsttwo{
+        display:block;
+    }
+    button{
+        background-color: black;
+        color:aliceblue;
+    }
+   
+</style>
+<body>
+ <div id="parent1">
+
+   <h2> Lovoda</h2>
+
+   <a href=" "> Cart <span> > </span></a>
+    
+   <a href=" "> Information <span> > </span> </a>
+
+   <a href=" "> Shipping   <span> > </span> </a>
+
+   <a href=" "> Payment</a>
+
+   <div id="method">
+    <p> Contact  
+        sunilamaranth@gmail.com <a> Change </a> </p>  
+    <p> Ship to    
+        259 East Erie Street no 36, Chicago IL 60611, United States     <a> Change </a> </p> 
+    <p> Method  Economy Free <a> Change </a> </p>  
+   </div>
+
+   <div>
+    <h4> Payment</h4>
+    <p> All transactions are secure and encrypted</p>
+
+     <p> <input type="radio"/> Credit Card  <img src="https://cdn.shopify.com/shopifycloud/checkout-web/assets/074315f4e64637ad6544fb57ee4a5a31.svg"/>
+        <img src =" https://cdn.shopify.com/shopifycloud/checkout-web/assets/514f6e6c6276bbce83746b13748ab9f5.svg"/>
+        <img src=" https://cdn.shopify.com/shopifycloud/checkout-web/assets/c4d8f750eff92213f47e4a66f5582d66.svg"/>
+        <img src=" https://cdn.shopify.com/shopifycloud/checkout-web/assets/d0c08983f01237697642c8d7ad425e44.svg"/> 
+        and  more...
+        </p>
+        <input id="firsttwo" placeholder="xxxx xxxx xxxx xxxx"/>
+        <input  id="firsttwo" placeholder="Card holder name"/>
+        <input type="number" placeholder="Expiration date (MM/YY)"/>
+        <input typr= " color" placeholder="CVV"/>
+       
+   </div>
+
+   </div>
+   <div>
+    <h5> Billing address</h5>
+    <p>  Select the address that matches your card or payment method.</p>
+    <p> <input type="radio"/> Same as shipping address</p>
+
+   </div>
+   <div>
+    <h4> Remember me</h4>
+    <p> <input type="checkbox"/> Save my information for a faster checkout </p>
+   </div>
+   <button id="lastbutton" onclick="pushthis()"> Pay now</button>
+   </div>
+   <div>
+    <p> Got a coupon code?? Enter below</p>
+    <input placeholder="Gift card or discount card"/> 
+    <button id="applycoup" onclick="discount()"> Apply </button>
+   </div>
+</body>
+ 
+   </html>
+
+<script>
+
+    function pushthis(){
+        alert("Payment information saved");
+
+    }
+    function discount(){
+
+        alert("Woah! you got a discount of 10%")
+    }
+</script>
