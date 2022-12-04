@@ -27,11 +27,14 @@
         width: 100%;
         margin: auto;
       }
+      #main form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+      }
       #main > div:first-child {
         height: 40%;
-      }
-      #main > div:first-child button {
-        margin-top: 20px;
       }
       button {
         cursor: pointer;
@@ -50,8 +53,7 @@
         color: blue;
       }
       button:nth-child(2) {
-        border: none;
-        box-shadow: 3px 1px 3px 1px;
+        font-size: medium;
         color: black;
       }
       button:nth-child(3) {
@@ -66,30 +68,30 @@
         margin-left: 6px;
         /* margin-left: -20px; */
       }
-      #main div input {
-        margin-top: 20px;
-        padding: 11px; 
-        width: 91%;
-        border-radius:2px;
+      #main form input{
+        width: 95%;
+        height: 18px;
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 5px;
       }
-      #main div:last-child a {
-        text-align: left;
-        margin-top: 15px;
-        color: black;
-      }
-      #main div:last-child {
-        align-items: center;
-        height: 35%;
-      }
-      #main div:last-child button {
+       #main form input:last-child{
         width: 120px;
-        margin-top: 30px;
-
-        background-color: black;
-        color: white;
-        border-radius: 2px;
-        text-align: center;
-      }
+        height: 50px;
+        margin-left: 40%;
+       text-align: center;
+       background-color: black;
+       color: white;
+        border-radius: -5px;
+       }
+       #main form a{
+        margin-top: -20px;
+        margin-bottom: 40px;
+        text-align: left;
+        color: black;
+       }
+       
+     
     </style>
   </head>
   <body>
@@ -97,20 +99,48 @@
       <h1>Login</h1>
       <div>
         <button>
-          <img src="/fb.png" alt="facebook" /> Continue with Facebook
+          <img src="/Lovoda-construct-week-project//fb.png" alt="facebook" /> Continue with Facebook
         </button>
-        <button><img src="/google.png" alt="" /> Google</button>
-        <button><img src="/am.png" alt="" /> Amazon</button>
+        <button><img src="/Lovoda-construct-week-project/google.png" alt="" /> Google</button>
+        <button><img src="/Lovoda-construct-week-project/am.png" alt="" /> Amazon</button>
       </div>
-      <div>
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Password" />
-        <div>
-          <a href="">Forgot Your Password ?</a>
-        </div>
-        <button>Sign in</button>
-        <a href="/SignIn.html" target="_blank" >Create Account</a>
-      </div>
+        <form action="">
+          <input type="text" id="email"
+          placeholder="Email" required>
+          <input type="text" id="password" placeholder="password" required><br>
+         <a href="">Forgot Your Password ?</a>
+          <input type="submit" value="signIn">
+        </form>
+        <a  style="color:black" href="Signup.html" target="_blank" >Create Account</a>
+      
     </div>
+    <script>
+     
+document.querySelector("form").addEventListener("submit", signInFn);
+    var signupData = JSON.parse(localStorage.getItem("account-data"));
+    console.log(signupData);
+
+    function signInFn(){
+      event.preventDefault();
+
+      var emails = document.getElementById("email").value;
+      var passwords = document.getElementById("password").value;
+
+      for(var i=0; i<signupData.length; i++){
+        if(signupData[i].email == emails && signupData[i].password ==passwords){
+          alert("login Succesful");
+          window.location.href="index.html";
+          break;
+        }else{
+         alert("login failed pls fill correct data ");
+          document.querySelector("#email").value="";
+          document.querySelector("#password").value="";
+          break;
+        }
+      }
+      document.getElementById("email").value="";
+      document.getElementById("password").value="";
+    }
+    </script>
   </body>
 </html>
