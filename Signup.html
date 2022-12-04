@@ -84,30 +84,76 @@
         border-radius: 2px;
         text-align: center;
       }
-      #last{
-         background-color: red;
+      #last {
+        background-color: red;
       }
       
+    
     </style>
+    <script src="/Lovoda-construct-week-project/signIn.js"></script>
   </head>
   <body>
     <div id="main">
       <h1>Create account</h1>
       <div>
-        <button>
-          <img src="/fb.png" alt="facebook" /> Continue with Facebook
+        <a href="www.facebook.com">
+          <button >
+          <img src="/Lovoda-construct-week-project/fb.png" alt="facebook" />
+          Continue with Facebook
         </button>
-        <button><img src="/google.png" alt="" /> Google</button>
-        <button><img src="/am.png" alt="" /> Amazon</button>
+        </a>
+        
+        <button>
+          <img src="/Lovoda-construct-week-project/google.png" alt="" /> Google
+        </button>
+        <button>
+          <img src="/Lovoda-construct-week-project/am.png" alt="" /> Amazon
+        </button>
       </div>
       <div>
-        <input type="text" placeholder="First Name" />
-        <input type="text" placeholder="Last Name" />
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Password" />
-        <input type="checkbox" name="" id="">
-        <button>Create account</button>
+        <form action="">
+          <input type="text" placeholder="First Name" id="firstN" required />
+          <input type="text" placeholder="Last Name" id="lastN" required/>
+          <input type="text" placeholder="Email" id="email" required/>
+          <input type="text" placeholder="Password" id="password" required/>
+          
+          <button type="submit" onclick="signup()">Create account</button>
+        </form>
       </div>
     </div>
+    <script>
+      document.querySelector("form").addEventListener("submit", signUpFn);
+      var arr = JSON.parse(localStorage.getItem("account-data")) || [];
+
+      function signUpFn() {
+        event.preventDefault();
+
+        var Fname = document.getElementById("firstN").value;
+        var Lname = document.getElementById("lastN").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        var obj = {
+          Fname: Fname,
+          Lname: Lname,
+          email: email,
+          password: password,
+        };
+
+        arr.push(obj);
+        // console.log(arr);
+        localStorage.setItem("account-data", JSON.stringify(arr));
+        
+        window.alert("SignUp successful!");
+        window.location.href = "logIn.html";
+
+         document.getElementById("firstN").value="";
+         Lname = document.getElementById("lastN").value="";
+         email = document.getElementById("email").value="";
+         password = document.getElementById("password").value="";
+        }
+      
+      
+    </script> 
   </body>
 </html>
