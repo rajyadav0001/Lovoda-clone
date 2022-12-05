@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payments page</title>
+    <title>Lovoda Payments</title>
 </head>
 <style>
     div p{
@@ -34,6 +34,7 @@
  <div id="parent1">
 
    <h2> Lovoda</h2>
+   <hr/>
 
    <a href=" "> Cart <span> > </span></a>
     
@@ -79,25 +80,26 @@
     <h4> Remember me</h4>
     <p> <input type="checkbox"/> Save my information for a faster checkout </p>
    </div>
-   <button id="lastbutton" onclick="pushthis()"> Pay now</button>
-   </div>
+  
    <div>
     <p> Got a coupon code?? Enter below</p>
     <input placeholder="Gift card or discount card"/> 
     <button id="applycoup" onclick="discount()"> Apply </button>
    </div>
+   <div> <a href="Thankyoupage.html"> <button id="lastbutton"  style="text-align:center"> Pay now</button></a> </div>
+   <hr/>
+   
 </body>
  
    </html>
 
-<script>
+   <script> 
+   function discount(){
+     alert("Woah! you got a discount of 10%")
+   }
+   function PAYME(){
+    alert("Payment Successful")
+   }
+     </script>
 
-    function pushthis(){
-        alert("Payment information saved");
 
-    }
-    function discount(){
-
-        alert("Woah! you got a discount of 10%")
-    }
-</script>
