@@ -4,24 +4,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart</title>
-    <link
-      rel="shortcut icon"
-      href="https://cdn.shopify.com/s/files/1/0627/7388/7215/files/Favicon_32x32.jpg?v=1650456214"
-      type="image/x-icon"
-    />
-
-    <!-- custom css -->
-   
-    <link rel="stylesheet" href="./style/Cart.css" />
+    
+    <link rel="stylesheet" href="/footer_page/footer.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
 
     <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    
     <style>
         body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -460,7 +449,7 @@
 
            </div>
       </div>
-        <a href="../checkout.html"><button onclick="NextPage()" id="checkout">Check out</button><br /></a>  
+        <a href="checkout.html"><button onclick="NextPage()" id="checkout">Check out</button><br /></a>  
         <button id="shop-pay">Shop<span class="shop-pay-span">Pay</span></button
         ><br />
         <button id="paypal">
@@ -523,8 +512,9 @@
       <a href="navbar_ShopAll.html">  <button id="view-all">View All</button></a>
       </div>
     </div>
-      <div id="foot-part"></div> 
+      
   </body>
+  
 </html>
 <script>
   var productInCart=JSON.parse(localStorage.getItem("cart")) || [];
@@ -578,4 +568,10 @@ function calculateVal(){
     document.querySelector("body").append(div);
  }
 
+ 
 </script>
+
+ 
+ 
+   
+
