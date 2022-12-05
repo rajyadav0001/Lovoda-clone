@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <style>
+      #main {
+        margin: auto;
+        margin-top: 30px;
+        width: 33%;
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        /* background-color: red; */
+      }
+      #main h1 {
+        margin: 15px 0;
+      }
+      h1 {
+        margin-bottom: 60px;
+      }
+      /* //Descendant Selector */
+      #main div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+      }
+      button {
+        cursor: pointer;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: white;
+        text-align: left;
+        border-radius: 4px;
+        justify-content: center;
+        align-items: center;
+      }
+      button:first-child {
+        border-color: blue;
+        color: blue;
+      }
+      button:nth-child(2) {
+        border: none;
+        box-shadow: 3px 1px 3px 1px;
+        color: black;
+      }
+      button:nth-child(3) {
+        border-style: none;
+        background-color: orange;
+        color: white;
+      }
+
+      button img {
+        width: 15px;
+        margin-right: 27px;
+        margin-left: 6px;
+        /* margin-left: -20px; */
+      }
+      #main div input {
+        margin-top: 20px;
+        padding: 11px;
+        width: 91%;
+        border-radius: 2px;
+      }
+      #main div:last-child a {
+        text-align: left;
+        margin-top: 15px;
+        color: black;
+      }
+      #main div:last-child {
+        align-items: center;
+        height: 35%;
+      }
+      #main div:last-child button {
+        width: 150px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        
+        background-color: black;
+        color: white;
+        border-radius: 2px;
+        text-align: center;
+      }
+      #last {
+        background-color: red;
+      }
+      
+    
+    </style>
+    <script src="/Lovoda-construct-week-project/signIn.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Create account</h1>
+      <div>
+        <a href="www.facebook.com">
+          <button >
+          <img src="fb.png" alt="facebook" />
+          Continue with Facebook
+        </button>
+        </a>
+        
+        <button>
+          <img src="google.png" alt="" /> Google
+        </button>
+        <button>
+          <img src="am.png" alt="" /> Amazon
+        </button>
+      </div>
+      <div>
+        <form action="">
+          <input type="text" placeholder="First Name" id="firstN" required />
+          <input type="text" placeholder="Last Name" id="lastN" required/>
+          <input type="text" placeholder="Email" id="email" required/>
+          <input type="text" placeholder="Password" id="password" required/>
+          
+          <button  type="submit" onclick="signup()">Create account</button>
+        </form>
+      </div>
+    </div>
+<<<<<<< HEAD:SignIn.html
+    <div></div>
+=======
+    <script>
+      document.querySelector("form").addEventListener("submit", signUpFn);
+      var arr = JSON.parse(localStorage.getItem("account-data")) || [];
+
+      function signUpFn() {
+        event.preventDefault();
+
+        var Fname = document.getElementById("firstN").value;
+        var Lname = document.getElementById("lastN").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        var obj = {
+          Fname: Fname,
+          Lname: Lname,
+          email: email,
+          password: password,
+        };
+
+        arr.push(obj);
+        // console.log(arr);
+        localStorage.setItem("account-data", JSON.stringify(arr));
+        
+        window.alert("SignUp successful!");
+        window.location.href = "logIn.html";
+
+         document.getElementById("firstN").value="";
+         Lname = document.getElementById("lastN").value="";
+         email = document.getElementById("email").value="";
+         password = document.getElementById("password").value="";
+        }
+      
+      
+    </script> 
+>>>>>>> 394ea0783793e39ce2987dcc4c428c0279e49590:Signup.html
+  </body>
+</html>

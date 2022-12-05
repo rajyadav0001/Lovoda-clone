@@ -433,7 +433,6 @@
       </div>
       </div>
 
-
       <div id="payment-option-sec">
         <p id="subtotal-text" style="font-weight: bold; font-size: 20px;">Subtotal:$16.00<span style="font-weight: bold; font-size: 20px;" id="subtotal"></span></p>
         <p class="text">or 4 interest-free payments of $49.50 with</p>
@@ -450,7 +449,7 @@
 
            </div>
       </div>
-        <button onclick="NextPage()" id="checkout">Check out</button><br />
+        <a href="checkout.html"><button onclick="NextPage()" id="checkout">Check out</button><br /></a>  
         <button id="shop-pay">Shop<span class="shop-pay-span">Pay</span></button
         ><br />
         <button id="paypal">
@@ -513,13 +512,7 @@
       <a href="navbar_ShopAll.html">  <button id="view-all">View All</button></a>
       </div>
     </div>
-    <div id="foot"></div>
-    <script>
-      $(function(){
-       $("#foot").load("/footer_page/footer.html");
-       });
-    </script>
-    
+      
   </body>
   
 </html>
